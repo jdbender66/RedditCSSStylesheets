@@ -1,0 +1,1067 @@
+/*--------------------BODY SECTION----------------------*/
+
+/*Site Table*/
+.sitetable{
+background-color: white;
+}
+
+/*Self-post Thumbnail Icon*/
+.thumbnail.self {
+    height: 50px; /*Adjust to your Images height*/
+    background: url(%%self%%);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+} 
+
+/*Stickied Posts*/
+.stickied {
+    background-color:#e2f0ff;
+    border: 1px solid grey;
+    margin-right: 320px;
+    padding: 5px;
+}
+
+/* Page Background*/
+
+    body {
+    background: white;
+    }
+
+/* Link List Margin*/
+.content {
+margin-top: 30px;
+}
+
+
+/*link score and rank*/
+.link .score {
+ color: #169eda !important;
+    
+ }
+
+.link .rank {
+ color: black !important;
+   font-weight: bold;
+ }
+
+/*Button to expand post*/
+.linklisting .expando-button {
+  margin: 6px 5px 8px 0px
+}
+
+
+.report-button:hover:after {
+    position: absolute;
+    white-space: normal;
+    display: block;
+    z-index: 1000;
+    width: 350px;
+    padding: 5px;
+    border: 0px solid #333;
+    background: #fca;
+    content: "Please also message the moderators a link and reason why you are reporting this, thanks. ";
+    text-align: center;
+    font-size: 10px;
+    color: red;
+    margin-left: 25px;
+    margin-top: 5px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px
+}
+
+
+/*downvote warning*/
+.arrow.down:hover:before {
+position: absolute;
+display: block;
+z-index: 1000;
+width: 210px;
+padding: 5px;
+border: 1px solid black;
+background: #5788ac;
+content: "Rip up the paper, smash up the walls? Don't downvote because you disagree!";
+text-align: center;
+font-size: 10px;
+color: black;
+font-weight: bold;
+margin-left: 25px;
+margin-top: 5px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-border-radius: 4px
+}
+
+
+
+
+/*Hides default text on submission page*/
+#link-desc, #text-desc {font-size: 0px;}
+
+/* Adds text to the submission page*/
+#link-desc:after, #text-desc:after {
+    display: block;
+    font-weight: bold; /*Delete this line if you don't want bold text*/
+    color: black; /*You could also change it to something more attention grabbing*/
+    content: "Hey There! Thank you for submitting to /r/AboveandBeyond! Please keep it constructive, on-topic, and descriptive. FLAIR POST AFTER SUBMISSION!";
+    font-size: 12px;
+} 
+
+
+/* ------------------------------HEADER AREA-----------------------------*/
+
+/* Header Image*/
+#header {
+    background: url(%%headerimg%%);
+    background-size: 1600px 180px;
+    height: 180px;
+    border: 0 solid black;
+    
+    }
+
+/*Hide Snoo*/
+#header-img.default-header { display: none; }
+
+.pagename a {
+    display: inline-block;
+    height: 74px;
+    width: 200px;
+    background: url(%%reddit-name%%);
+    vertical-align: bottom;
+    text-indent: -99em;
+   margin-bottom:30px;
+}
+
+/* Username Bar */
+#header-bottom-right {
+    background-color: white;
+    }
+
+/*Username bar font color*/
+#header-bottom-right  a{
+    color: black;
+    }
+
+/*Shortcut Bar*/
+#sr-header-area {
+    background-color: #ecf4ff;
+    border-bottom: 1px solid black;
+    }
+
+/*Shortcut Bar Font Color*/
+#sr-header-area a, #sr-header-area .dropdown .selected, #sr-header-area .separator {
+    color: black !important;
+    }
+
+/*RES Selected Shortcut*/
+#sr-header-area a.RESShortcutsCurrentSub, #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
+    font-weight: bold;
+    color: blue!important;
+}
+
+
+
+/*------------------------NAVIGATION MENU---------------------------*/
+
+/*TAB MENU POSITION*/
+#header-bottom-left{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    
+    margin-top:82px;
+    }
+
+/*Navigation Menu Selected*/
+.tabmenu li.selected a {
+    background-color: #11355c;
+    color: #e2f0ff;
+    }
+
+/*Navigation Menu Hover*/
+.tabmenu li:hover a {
+    background-color: #11355c;
+    color: #e2f0ff;
+    }
+
+/*Navigation Menu Static*/
+.tabmenu li a {
+    color: #11355c;
+    background-color: #e2f0ff;
+    border: solid 1px #11355c;
+    }
+
+
+
+/*-------------------------------SIDEBAR AREA--------------------------*/
+
+/* Sidebar Picture (300x300)*/
+/* Change Padding for length size */
+.side {
+    padding: 300px 0px 0px 0px;
+    background-image:url(%%vol13%%);
+    background-repeat: no-repeat;
+    background-color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+.titlebox .redditname {
+    position: relative;
+}
+.titlebox .redditname:before {
+    content: url(%%sidebar-name%%);
+}
+.titlebox .redditname a {
+    background: rgba(0,0,0);
+    color: #fff;
+    left: 0;
+    opacity: 0;
+    padding: .5em 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Sidebar Positioning*/
+.side {
+float: right;
+margin: 5px 5px 5px 5px;
+}
+
+/*Total subscribers*/
+.titlebox .subscribers{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+color: #39688b;
+}
+
+/*Subs online*/
+.titlebox .users-online{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+color:#39688b;
+font-weight: bold;
+}
+
+/*Subreddit name in sidebar*/
+.titlebox h1{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.titlebox h1 a {
+    color: #11355c; 
+}
+
+/*Mod Tool Coloration*/
+.sidecontentbox .content a{ color: black; }
+
+/*Tour Date Table Style*/
+.side table{ background: #ecf4ff; border: solid black 2px; width:100%;}
+
+/*Tour Date Table Headers*/
+.side table th{ background:  #11355c; color: #e2f0ff;}
+
+
+/* General Sidebar Formatting */
+.titlebox blockquote {
+    border: 1px solid #AAA;
+    text-shadow: 0 1px 0 white;
+    color: #787878;
+    font-weight: bold;
+    
+}
+.titlebox {
+    padding: 10px;
+    background: transparent; /*Sidebar Background color*/
+    border: 1px solid #AAA; /*Sidebar border color*/
+    color: #787878; /*Text color in sidebar*/
+    
+}
+
+
+/*--------------Collapsible menus-----------*/
+.titlebox .md h3 + ul {
+    margin: 0 2em;
+    padding: 3px;
+ }
+.titlebox .md h3, div.titlebox .md h3 a {
+    color: #eee; /*General Header text color*/
+ }
+.titlebox .md h3 + ul {
+    display: none;
+ }
+
+.titlebox .md h3:hover + ul,
+.titlebox .md h3 + ul:hover { /*Font style of list items*/
+    display: block;
+    font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.titlebox .md h3 + ul li:hover {
+    background-color: #eee; 
+  /*Color you seen when ^ hovering over sidebar items*/
+}
+.res-nightmode .titlebox .md h3 + ul li:hover {
+    background-color: #393939;
+  /*Color you seen when ^ hovering over sidebar items- Nightmode*/
+}
+.titlebox .md h3 {
+    background-color: #11355c; /*### background color*/
+    color: #e2f0ff; /*### Text color*/
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 280px;
+    line-height: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 4px 0 0 -11px;
+}
+.res-nightmode .titlebox .md h3 { 
+    background-color: #7a9642; /*Nightmode background color*/
+}
+.titlebox .md h3:after {
+    margin-bottom: 10px;
+}
+.titlebox .md h3:before { 
+    content: "+"; 
+    color: #e2f0ff; /*color of the + in ###*/
+padding-right: 5px; 
+} 
+.titlebox .md h3 + ul {
+    line-height: 1.7em
+}
+
+
+
+/*-------------------Submit buttons--------------------*/
+.submit .nub { display: none; }
+.submit .morelink { background:  #e2f0ff;  border: solid 1px #11355c;}
+.submit .morelink:hover {  background: #11355c; }
+.submit .morelink:hover a{ color: #e2f0ff; }
+.submit .morelink a { font-size: 16px; color:#11355c; font-family: "Trebuchet MS", Helvetica, sans-serif; text-transform: uppercase;}
+
+
+
+/*Changes the name of your subscribers/users here now*/
+  .titlebox .word { display: none }
+  .titlebox .number:after { content: " Are All We Need"; }
+  .titlebox .users-online span.number:after { content: " Can't Sleep"; }
+
+/*Changing the word moderators on top of the list of moderators box*/  
+/*Hide Old*/
+.sidecontentbox .helplink + .title h1 { font-size: 0}
+/*Update New*/
+.sidecontentbox .helplink + .title h1:before { font-size: small; content: "MODERATION TEAM" }  
+
+
+/*Hide Subreddit Founder*/
+.titlebox .bottom { font-size: 0; }
+.bottom .age { font-size: x-small; }
+
+
+/*-----------------------Nicer Stylesheet Formatting-----------------------*/
+
+.stylesheet-customize-container {
+    width: 100%;
+}
+#subreddit_stylesheet {
+    display: block;
+    overflow: hidden;
+}
+.sheets {
+    margin: 0;
+}
+#stylesheet_contents{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    padding: 5px;
+    background-color: #222;
+    color: #ace;
+    border: 2px solid #222;
+    height: 500px;
+    font-size: 13px;
+}
+.res-nightmode #stylesheet_contents{
+    background-color: #111;
+    border-color: #111;
+}
+
+
+
+
+/*----------------------------------------------LINK FLAIR, DO NOT TOUCH------------------------------------------*/
+
+/*Hide Old Flair button*/
+.flairselectbtn {
+    color: red;
+    font-size: 0px;
+    }
+
+/*Set New Flair Text*/
+.flairselectbtn:after {
+    color: black;
+    content: "Edit Flair";
+    font-size: x-small !important
+    }
+
+
+/*--------Link Flair Styling--------*/
+
+ .linkflair-one .linkflairlabel {
+        background-color: #add5ab;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: LightSlateGray;
+        border-width: 1px;;
+        border-width: 0px;
+    }
+
+    .linkflair-two .linkflairlabel {
+        background-color: #A0B9F2;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: MidnightBlue;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-three .linkflairlabel {
+        background-color: #F5B3B7;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: Tomato;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-four .linkflairlabel {
+        background-color: #F3F5B3;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: YellowGreen;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-five .linkflairlabel {
+        background-color: #B3EDF5;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: Indigo;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-six .linkflairlabel {
+        background-color: #F5B3F5;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: MediumOrchid;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-seven .linkflairlabel {
+        background-color: #FFA05C;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: Maroon;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-eight .linkflairlabel {
+        background-color: #D1D1D1;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: SpringGreen;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-nine .linkflairlabel {
+        background-color: #4A4AFF;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: #000000;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-ten .linkflairlabel {
+        background-color: #FFDD00;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: #000000;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-eleven .linkflairlabel {
+        background-color: #FF0000;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: Fuchsia;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twelve .linkflairlabel {
+        background-color: #AA00FF;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: GhostWhite;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-fifteen .linkflairlabel {
+        background-color: #5EFF1F;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: #000000;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-thirteen .linkflairlabel {
+        background-color: #FF1FF8;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: DeepSkyBlue;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-fourteen .linkflairlabel {
+        background-color: #FFA200;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: DarkGoldenRod;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-sixteen .linkflairlabel {
+        background-color: #62e18d;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: Green;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-seventeen .linkflairlabel {
+        background-color: #f3f44a;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: red;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-eighteen .linkflairlabel {
+        background-color: lightblue;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: purple;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-nineteen .linkflairlabel {
+        background-color: orange;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: yellow;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twenty .linkflairlabel {
+        background-color: lightgreen;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: green;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+.linkflair-twentyone .linkflairlabel {
+        background-color: lightblue;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: purple;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentytwo .linkflairlabel {
+        background-color: pink;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: DarkMagenta;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentythree .linkflairlabel {
+        background-color: lightblue;
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+        border-color: DarkMagenta;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentyfour .linkflairlabel {
+        background-color: lightcyan;
+        font-size: 11px;
+        font-weight: bold;
+        color: purple;
+        border-color: lightcoral;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentyfive .linkflairlabel {
+        background-color: palegreen;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: lightcoral;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentysix .linkflairlabel {
+        background-color: palegreen;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: lightblue;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentyseven .linkflairlabel {
+        background-color: cyan;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: crimson;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentyeight .linkflairlabel {
+        background-color: darkturquoise;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: DodgerBlue;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-twentynine .linkflairlabel {
+        background-color: khaki;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: gold;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-thirty .linkflairlabel {
+        background-color: lawngreen;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: lightcoral;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-thirtyone .linkflairlabel {
+        background-color: darkturquoise;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: lightcoral;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-thirtytwo .linkflairlabel {
+        background-color: yellow;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: red;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-thirtythree .linkflairlabel {
+        background-color: lightgreen;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: red;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+    .linkflair-thirtyfour .linkflairlabel {
+        background-color: #0ADA9E;
+        font-size: 11px;
+        font-weight: bold;
+        color: black;
+        border-color: #25434E;
+        border-width: 1px;;
+        border-radius: 0px;
+    }
+
+
+/*--------------------------USER FLAIR---------------------*/
+
+
+/*Background of flair selector. Default was black and looked bad*/
+.flairselector{
+background: white;
+}
+
+/*Flair Selector Width Fix*/
+.flairselector ul {max-width: 260px !important; width: 260px !important;}
+   .flairoptionpane, .flairselector {width: 800px !important;} 
+
+.flair {
+    background: url(%%spritesheet%%) no-repeat -9999px;
+    border: 0;
+    padding: 0;
+    margin-left:5px;
+}
+
+.flair-1 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 0;
+}
+
+.flair-10 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -25px;
+}
+
+.flair-11 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -50px;
+}
+
+.flair-12 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -75px;
+}
+
+.flair-13 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -100px;
+}
+
+.flair-14 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -125px;
+}
+
+.flair-15 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -150px;
+}
+
+.flair-16 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -175px;
+}
+
+.flair-17 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -200px;
+}
+
+.flair-18 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -225px;
+}
+
+.flair-19 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -250px;
+}
+
+.flair-2 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -275px;
+}
+
+.flair-20 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -300px;
+}
+
+.flair-21 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -325px;
+}
+
+.flair-22 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -350px;
+}
+
+.flair-23 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -375px;
+}
+
+.flair-24 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -400px;
+}
+
+.flair-25 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -425px;
+}
+
+.flair-26 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -450px;
+}
+
+.flair-27 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -475px;
+}
+
+.flair-28 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -500px;
+}
+
+.flair-29 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -525px;
+}
+
+.flair-3 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -550px;
+}
+
+.flair-30 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -575px;
+}
+
+.flair-31 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -600px;
+}
+
+.flair-32 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -625px;
+}
+
+.flair-33 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -650px;
+}
+
+.flair-34 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -675px;
+}
+
+.flair-35 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -700px;
+}
+
+.flair-36 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -725px;
+}
+
+.flair-37 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -750px;
+}
+
+.flair-38 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -775px;
+}
+
+.flair-39 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -800px;
+}
+
+.flair-4 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -825px;
+}
+
+.flair-40 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -850px;
+}
+
+.flair-41 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -875px;
+}
+
+.flair-42 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -900px;
+}
+
+.flair-43 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -925px;
+}
+
+.flair-44 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -950px;
+}
+
+.flair-45 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -975px;
+}
+
+.flair-46 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1000px;
+}
+
+.flair-47 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1025px;
+}
+
+.flair-48 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1050px;
+}
+
+.flair-49 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1075px;
+}
+
+.flair-5 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1100px;
+}
+
+.flair-50 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1125px;
+}
+
+.flair-6 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1150px;
+}
+
+.flair-7 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1175px;
+}
+
+.flair-8 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1200px;
+}
+
+.flair-9 {
+    line-height: 25px; min-width: 25px; text-indent: 28px;
+    height: 25px;
+    background-position: 0 -1225px;
+}
